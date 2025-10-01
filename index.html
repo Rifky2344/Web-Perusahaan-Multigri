@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multigri Pillar Utama</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="img/Logo Multigri.png" alt="Logo Multigri"></a>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Produk.html">Product</a></li>
+                <li><a href="Gudang.html">Gudang</a></li>
+                <li><a href="index.html#contacts">Contact Us</a></li>
+            </ul>
+        </nav>
+        <button class="hamburger-menu" aria-label="Toggle Navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <main>
+        <div class="picture">
+            <img src="img/sawah.jpg" alt="Pemandangan sawah">
+            <div class="picture-text">
+                <h1>Reliable, Innovative, Commitment</h1>
+            </div>
+        </div>
+
+        <section class="bgWhite" id="aboutus">
+            <div class="about_us">
+                <h1>About Us</h1>
+                <hr>
+                <p>Kami adalah perusahaan distribusi pupuk yang berdedikasi untuk mendukung kemajuan sektor pertanian di
+                    Indonesia. Dengan komitmen pada kualitas dan pelayanan, kami menjadi mitra terpercaya bagi para
+                    petani.</p>
+                <p>Didirikan dengan semangat inovasi, Multigri Pillar Utama terus beradaptasi dengan teknologi terkini
+                    untuk memastikan efisiensi dan efektivitas dalam setiap rantai pasok kami.</p>
+            </div>
+        </section>
+
+        <section class="bgGreen" id="visimisi">
+            <div class="visi_misi_container">
+                <div class="visi_misi">
+                    <div class="content_vmq">
+                        <h1>Visi</h1>
+                        <hr>
+                        <p>Menjadi perusahaan distribusi yang andal, inovatif, dan berkomitmen tinggi. Partner andalan
+                            yang selalu bisa menyesuaikan diri dengan segala perubahan untuk memberikan pelayanan
+                            terbaik dan menciptakan iklim usaha yang sehat.</p>
+                    </div>
+                    <div class="content_vmq">
+                        <h1>Misi</h1>
+                        <hr>
+                        <ul>
+                            <li>Menjadi perusahaan yang lebih dekat, intensif, dan mengutamakan kenyamanan pelanggan.
+                            </li>
+                            <li>Membangun tim yang solid dan terpercaya untuk mencapai kesuksesan bersama.</li>
+                            <li>Menjadi distributor dengan nilai terbaik dan selalu berinovasi untuk pertumbuhan
+                                perusahaan.</li>
+                            <li>Menjadi perusahaan yang sehat secara finansial dan memberikan nilai bagi tim serta
+                                lingkungan sekitar.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bgWhite feature-section reveal-up reveal">
+            <div class="feature-inner">
+                <h1>Keunggulan Kami</h1>
+                <hr>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="bi bi-truck"></i></div>
+                        <h3>Distribusi Tepat Waktu</h3>
+                        <p>Armada siap kirim dan rute efisien memastikan produk tiba sesuai jadwal.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="bi bi-shield-check"></i></div>
+                        <h3>Kualitas Terjamin</h3>
+                        <p>Kontrol kualitas berlapis dari pergudangan hingga pengiriman.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="bi bi-cpu"></i></div>
+                        <h3>Inovasi Berkelanjutan</h3>
+                        <p>Pengembangan formulasi dan teknologi untuk hasil panen optimal.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="bi bi-people"></i></div>
+                        <h3>Dukungan Pelanggan</h3>
+                        <p>Tim ramah dan responsif membantu kebutuhan Anda kapan pun.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bgWhite" id="businesscore">
+            <div class="container">
+                <h1>Business Core</h1>
+                <hr>
+                <div class="card-grid">
+                    <div class="card hover-elevate reveal-up" data-bs-toggle="modal" data-bs-target="#gudangModal">
+                        <div class="card-image bg-gudang-image"></div>
+                        <div class="card-content">
+                            <h2>Gudang & Logistik</h2>
+                            <p>Sistem pergudangan modern untuk memastikan ketersediaan dan pengiriman produk yang efisien.</p>
+                            <div class="card-badge">
+                                <span class="badge bg-success">Terintegrasi</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card hover-elevate reveal-up delay-100" data-bs-toggle="modal" data-bs-target="#produkModal">
+                        <div class="card-image bg-pupuk-image"></div>
+                        <div class="card-content">
+                            <h2>Produk Unggulan</h2>
+                            <p>Menyediakan produk pupuk berkualitas tinggi yang telah teruji untuk hasil panen optimal.</p>
+                            <div class="card-badge">
+                                <span class="badge bg-warning">Berkualitas</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Statistics Section -->
+        <section class="bg-success text-white py-5">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="kpi-item">
+                            <i class="bi bi-award-fill mb-3" style="font-size: 3rem;"></i>
+                            <div class="kpi-num" data-target="15">0</div>
+                            <div class="kpi-label">Tahun Pengalaman</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="kpi-item">
+                            <i class="bi bi-people-fill mb-3" style="font-size: 3rem;"></i>
+                            <div class="kpi-num" data-target="500">0</div>
+                            <div class="kpi-label">+ Klien Terpuaskan</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="kpi-item">
+                            <i class="bi bi-truck mb-3" style="font-size: 3rem;"></i>
+                            <div class="kpi-num" data-target="50000">0</div>
+                            <div class="kpi-label">+ Ton Terdistribusi</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="kpi-item">
+                            <i class="bi bi-geo-alt-fill mb-3" style="font-size: 3rem;"></i>
+                            <div class="kpi-num" data-target="25">0</div>
+                            <div class="kpi-label">Kota Jangkauan</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modal Gudang -->
+        <div class="modal fade" id="gudangModal" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header bg-success text-white">
+                        <h5 class="modal-title">
+                            <i class="bi bi-boxes me-2"></i>Gudang & Logistik
+                        </h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <h6 class="text-success">Kapabilitas Utama:</h6>
+                                <ul class="list-unstyled">
+                                    <li><i class="bi bi-check-circle text-success me-2"></i>Kapasitas 10,000+ ton/tahun</li>
+                                    <li><i class="bi bi-check-circle text-success me-2"></i>Sistem FIFO terotomasi</li>
+                                    <li><i class="bi bi-check-circle text-success me-2"></i>Monitoring 24/7</li>
+                                    <li><i class="bi bi-check-circle text-success me-2"></i>99% on-time delivery</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h6 class="text-success">Teknologi:</h6>
+                                <div class="tech-badge-container">
+                                    <span class="badge bg-light text-dark me-2 mb-2">Cloud WMS</span>
+                                    <span class="badge bg-light text-dark me-2 mb-2">IoT Sensors</span>
+                                    <span class="badge bg-light text-dark me-2 mb-2">Mobile App</span>
+                                    <span class="badge bg-light text-dark me-2 mb-2">AI Analytics</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="Gudang.html" class="btn btn-success">
+                            <i class="bi bi-arrow-right me-1"></i>Selengkapnya
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Produk -->
+        <div class="modal fade" id="produkModal" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header bg-warning text-dark">
+                        <h5 class="modal-title">
+                            <i class="bi bi-droplet-fill me-2"></i>Produk Unggulan
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row g-3">
+                            <div class="col-sm-6">
+                                <div class="product-mini-card">
+                                    <i class="bi bi-droplet-fill text-primary"></i>
+                                    <h6>NPK Premium</h6>
+                                    <small>Formula seimbang</small>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="product-mini-card">
+                                    <i class="bi bi-flower1 text-success"></i>
+                                    <h6>Organik Plus</h6>
+                                    <small>100% organik</small>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="product-mini-card">
+                                    <i class="bi bi-moisture text-info"></i>
+                                    <h6>Foliar Specialist</h6>
+                                    <small>Penyerapan cepat</small>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="product-mini-card">
+                                    <i class="bi bi-tree text-warning"></i>
+                                    <h6>Kelapa Sawit Pro</h6>
+                                    <small>Khusus perkebunan</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="Produk.html" class="btn btn-warning">
+                            <i class="bi bi-arrow-right me-1"></i>Selengkapnya
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="bgWhite faq-section reveal-up reveal" id="faq">
+            <div class="faq-inner">
+                <h1>Pertanyaan yang Sering Diajukan</h1>
+                <hr>
+                <details class="faq-item">
+                    <summary><i class="bi bi-question-circle"></i> Bagaimana cara memesan produk?</summary>
+                    <div class="faq-content">Anda dapat menghubungi kami melalui formulir kontak atau telepon. Tim kami akan memandu proses pemesanan hingga pengiriman.</div>
+                </details>
+                <details class="faq-item">
+                    <summary><i class="bi bi-box-seam"></i> Apakah tersedia pengiriman ke seluruh Indonesia?</summary>
+                    <div class="faq-content">Ya, jaringan distribusi kami mencakup berbagai wilayah di Indonesia dengan estimasi waktu pengiriman yang efisien.</div>
+                </details>
+                <details class="faq-item">
+                    <summary><i class="bi bi-card-checklist"></i> Apakah produk memiliki sertifikasi?</summary>
+                    <div class="faq-content">Produk kami melalui uji kualitas internal dan mengikuti standar yang berlaku untuk memastikan mutu.</div>
+                </details>
+            </div>
+        </section>
+
+        <section class="bgGreen" id="contacts">
+            <div class="contact-container">
+                <h1>Contact Us</h1>
+                <hr>
+                <p>Ada pertanyaan atau ingin menjadi mitra kami? Jangan ragu untuk mengirimkan pesan!</p>
+
+                <form action="https://formspree.io/f/your_unique_code" method="POST">
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="name" class="form-label">Nama:</label>
+                                <input type="text" id="name" name="name" class="form-control" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email:</label>
+                                <input type="email" id="email" name="email" class="form-control" required>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-group">
+                                <label for="message" class="form-label">Pesan:</label>
+                                <textarea id="message" name="message" rows="5" class="form-control" required></textarea>
+                            </div>
+                        </div>
+                        <div class="col-12 text-center">
+                            <button type="submit" class="btn btn-warning btn-lg px-4">
+                                <i class="bi bi-send"></i> Kirim Pesan
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <button id="backToTopBtn" title="Kembali ke atas">&#8679;</button>
+
+    <section class="cta-section reveal-zoom reveal">
+        <div class="cta-inner">
+            <h2 class="cta-title">Siap berkolaborasi untuk panen yang lebih baik?</h2>
+            <p class="cta-subtitle">Hubungi tim kami untuk informasi produk, kemitraan distribusi, atau konsultasi kebutuhan pertanian Anda.</p>
+            <div class="cta-actions">
+                <a href="#contacts" class="btn btn-primary"><i class="bi bi-telephone"></i> Hubungi Kami</a>
+                <a href="Produk.html" class="btn btn-outline"><i class="bi bi-box"></i> Lihat Produk</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-top">
+            <div class="footer-col">
+                <div class="footer-brand">
+                    <img src="img/Logo Multigri.png" alt="Logo Multigri">
+                    <div>
+                        <h4>MULTIGRI PILLAR UTAMA</h4>
+                        <p>Distributor pupuk yang andal dan inovatif untuk mendukung kemajuan sektor pertanian Indonesia.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Navigasi</h4>
+                <ul class="footer-links">
+                    <li><a href="Produk.html">Product</a></li>
+                    <li><a href="Gudang.html">Gudang</a></li>
+                    <li><a href="index.html#contacts">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Kontak</h4>
+                <ul class="footer-links">
+                    <li><a href="mailto:info@multigri.co.id">info@multigri.co.id</a></li>
+                    <li><a href="tel:+620000000000">+62 000-0000-000</a></li>
+                    <li>Jakarta, Indonesia</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Ikuti Kami</h4>
+                <div class="social-icons">
+                    <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="#" aria-label="X"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 MULTIGRI PILLAR UTAMA. All Rights Reserved.
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
