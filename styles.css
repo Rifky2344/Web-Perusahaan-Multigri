@@ -1187,3 +1187,347 @@ main>section:nth-of-type(even) .box {
     .kpi-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     .testimonial-card { margin-bottom: 20px; }
 }
+
+/* Perbaikan responsive untuk mobile - section hijau */
+@media (max-width: 768px) {
+    /* Khusus untuk section bgGreen di mobile - kembalikan ke layout vertikal */
+    .bgGreen .box {
+        flex-direction: column !important;
+        text-align: center;
+    }
+    
+    /* Urutan gambar dulu, text kedua di mobile untuk section hijau */
+    .bgGreen .image-box {
+        order: 1;
+        margin-bottom: 30px;
+    }
+    
+    .bgGreen .text-box {
+        order: 2;
+    }
+    
+    /* Perbesar gambar di mobile untuk section hijau */
+    .bgGreen .photo-card {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    
+    .bgGreen .photo-card img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+    
+    /* Perkecil font di mobile untuk section hijau */
+    .bgGreen .info-title {
+        font-size: 1.4rem;
+    }
+    
+    .bgGreen .info-card p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+    
+    .bgGreen .info-list li span {
+        font-size: 0.9rem;
+    }
+    
+    /* Perbaiki padding di mobile */
+    .bgGreen .info-card {
+        padding: 20px 18px;
+    }
+    
+    .bgGreen .box {
+        padding: 20px 15px;
+        gap: 20px;
+    }
+    
+    /* Section bgWhite juga diperbaiki untuk konsistensi */
+    .bgWhite .box {
+        flex-direction: column !important;
+        text-align: center;
+    }
+    
+    .bgWhite .text-box {
+        order: 2;
+    }
+    
+    .bgWhite .image-box {
+        order: 1;
+        margin-bottom: 30px;
+    }
+    
+    /* Hero image height adjustment untuk mobile */
+    .picture2 {
+        height: 50vh;
+    }
+    
+    .picture2 .picture-text2 h1 {
+        font-size: 2.2em;
+    }
+    
+    /* Timeline process untuk mobile */
+    .process-timeline {
+        padding: 25px 20px;
+    }
+    
+    .timeline-step {
+        margin-bottom: 25px;
+    }
+    
+    .timeline-step .step-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.3rem;
+    }
+    
+    .timeline-step h5 {
+        font-size: 0.95rem;
+    }
+    
+    .timeline-step p {
+        font-size: 0.85rem;
+    }
+    
+    /* Warehouse process section mobile */
+    .warehouse-process-section {
+        padding: 40px 0;
+    }
+    
+    .warehouse-process-section .container {
+        padding: 0 15px;
+    }
+    
+    /* Mobile adjustment untuk product grid jika ada */
+    .product-grid-section {
+        padding: 40px 0;
+    }
+    
+    .product-card {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .product-title {
+        font-size: 1rem;
+    }
+    
+    .product-desc {
+        font-size: 0.9rem;
+    }
+}
+
+/* Tablet adjustment (768px - 992px) */
+@media (min-width: 769px) and (max-width: 992px) {
+    .bgGreen .box,
+    .bgWhite .box {
+        gap: 30px;
+    }
+    
+    .bgGreen .photo-card img {
+        height: 280px;
+    }
+    
+    .bgGreen .info-title {
+        font-size: 1.5rem;
+    }
+    
+    .process-timeline {
+        padding: 35px 25px;
+    }
+}
+
+/* Extra small mobile (max-width: 480px) */
+@media (max-width: 480px) {
+    .bgGreen .box,
+    .bgWhite .box {
+        padding: 15px 10px;
+        gap: 15px;
+    }
+    
+    .bgGreen .info-card {
+        padding: 18px 15px;
+    }
+    
+    .bgGreen .info-title {
+        font-size: 1.2rem;
+    }
+    
+    .bgGreen .info-card p {
+        font-size: 0.9rem;
+    }
+    
+    .bgGreen .info-list li span {
+        font-size: 0.85rem;
+    }
+    
+    .bgGreen .photo-card img {
+        height: 200px;
+    }
+    
+    .picture2 .picture-text2 h1 {
+        font-size: 1.7em;
+    }
+    
+    /* Timeline mobile kecil */
+    .timeline-step .step-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 1.2rem;
+    }
+    
+    .timeline-step h5 {
+        font-size: 0.9rem;
+    }
+    
+    .timeline-step p {
+        font-size: 0.8rem;
+    }
+    
+    section {
+        padding: 30px 15px;
+    }
+}
+
+/* Tambahan CSS untuk perbaikan mobile di bagian akhir file styles.css */
+
+/* Override khusus untuk mobile - section bgGreen */
+@media (max-width: 768px) {
+    /* Reset layout ke vertikal di mobile untuk semua section */
+    .box {
+        flex-direction: column !important;
+        text-align: center;
+        gap: 25px;
+    }
+    
+    /* Khusus section bgGreen - gambar dulu, teks kedua */
+    .bgGreen .image-box {
+        order: -1; /* Gambar selalu di atas */
+        width: 100%;
+    }
+    
+    .bgGreen .text-box {
+        order: 1; /* Teks di bawah */
+        width: 100%;
+    }
+    
+    /* Perbesar gambar di section hijau mobile */
+    .bgGreen .photo-card {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    
+    .bgGreen .photo-card img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        border-radius: 12px;
+    }
+    
+    /* Sesuaikan ukuran teks di section hijau */
+    .bgGreen .info-card--green {
+        background: rgba(255,255,255,0.12);
+        padding: 20px;
+        margin: 0 auto;
+        max-width: 90%;
+    }
+    
+    .bgGreen .info-title {
+        font-size: 1.3rem;
+        margin-bottom: 8px;
+    }
+    
+    .bgGreen .info-card p {
+        font-size: 0.95rem;
+        line-height: 1.5;
+        margin-bottom: 15px;
+    }
+    
+    .bgGreen .info-list li {
+        margin: 6px 0;
+    }
+    
+    .bgGreen .info-list li span {
+        font-size: 0.9rem;
+    }
+    
+    /* Section bgWhite juga disesuaikan */
+    .bgWhite .text-box {
+        order: -1; /* Teks dulu */
+    }
+    
+    .bgWhite .image-box {
+        order: 1; /* Gambar kedua */
+    }
+    
+    .bgWhite .photo-card img {
+        height: 200px;
+        object-fit: cover;
+    }
+    
+    .bgWhite .info-title {
+        font-size: 1.3rem;
+    }
+    
+    .bgWhite .info-card p {
+        font-size: 0.95rem;
+    }
+    
+    /* Hero section mobile */
+    .picture2 {
+        height: 45vh;
+        min-height: 300px;
+    }
+    
+    .picture2 .picture-text2 h1 {
+        font-size: 2em;
+        padding: 0 20px;
+    }
+    
+    /* Section padding mobile */
+    section {
+        padding: 35px 20px;
+    }
+    
+    .bgGreen,
+    .bgWhite {
+        padding: 40px 20px;
+    }
+}
+
+/* Mobile kecil (iPhone SE, dll) */
+@media (max-width: 480px) {
+    .bgGreen .photo-card img,
+    .bgWhite .photo-card img {
+        height: 180px;
+    }
+    
+    .bgGreen .info-card--green,
+    .bgWhite .info-card {
+        padding: 18px;
+        max-width: 95%;
+    }
+    
+    .bgGreen .info-title,
+    .bgWhite .info-title {
+        font-size: 1.2rem;
+    }
+    
+    .bgGreen .info-card p,
+    .bgWhite .info-card p {
+        font-size: 0.9rem;
+    }
+    
+    .picture2 .picture-text2 h1 {
+        font-size: 1.7em;
+    }
+    
+    section {
+        padding: 30px 15px;
+    }
+    
+    .box {
+        padding: 15px;
+        gap: 20px;
+    }
+}
