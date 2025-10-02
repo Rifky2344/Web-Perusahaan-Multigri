@@ -72,4 +72,23 @@ document.addEventListener('DOMContentLoaded', function () {
 
         revealEls.forEach(el => io.observe(el));
     }
+
+    // --- WhatsApp Button Animation ---
+    const whatsappBtn = document.getElementById('whatsappBtn');
+    if (whatsappBtn) {
+        // Efek bounce saat hover
+        whatsappBtn.addEventListener('mouseenter', function() {
+            this.style.animation = 'none';
+        });
+        
+        whatsappBtn.addEventListener('mouseleave', function() {
+            this.style.animation = 'whatsappPulse 2s infinite';
+        });
+
+        // Analytics tracking (opsional)
+        whatsappBtn.addEventListener('click', function() {
+            // Bisa ditambahkan Google Analytics tracking di sini
+            console.log('WhatsApp button clicked');
+        });
+    }
 });
