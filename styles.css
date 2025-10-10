@@ -644,196 +644,252 @@ main>section:nth-of-type(even) .box {
 
 /* ===== Enhanced Contact Section ===== */
 .contact-info-card {
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 20px;
-    padding: 40px 30px;
-    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 25px;
+    padding: 60px 45px; /* Diperbesar dari 40px 30px */
+    backdrop-filter: blur(20px);
     border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.15);
+    min-height: 100%;
+    width: 100%; /* Memastikan lebar penuh */
+}
+
+/* Perbesar container utama contact section */
+#contacts .container {
+    max-width: 1600px; /* Diperbesar dari 1200px default */
+    padding: 80px 20px; /* Diperbesar padding vertikal */
+}
+
+#contacts .col-lg-4 {
+    flex: 0 0 auto;
+    width: 40%; /* Diperbesar dari 33.33% default */
+}
+
+#contacts .col-lg-8 {
+    flex: 0 0 auto;
+    width: 60%; /* Menyesuaikan sisanya */
 }
 
 .contact-info-header {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 50px; /* Diperbesar dari 40px */
+    padding-bottom: 30px; /* Diperbesar dari 25px */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.contact-info-header .display-4 {
+    font-size: 3rem; /* Diperbesar dari 2.5rem */
+    margin-bottom: 20px; /* Diperbesar dari 15px */
+}
+
+.contact-info-header h4 {
+    font-size: 1.6rem; /* Diperbesar dari 1.4rem */
+    font-weight: 600;
+    margin-bottom: 12px; /* Diperbesar dari 8px */
+}
+
+.contact-info-header p {
+    font-size: 1.05rem; /* Diperbesar dari 0.95rem */
+    opacity: 0.85;
+    margin: 0;
 }
 
 .contact-info-list {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 40px; /* Diperbesar dari 30px */
 }
 
 .contact-info-item {
     display: flex;
     align-items: flex-start;
-    gap: 20px;
+    gap: 25px; /* Diperbesar dari 20px */
+    padding: 25px; /* Diperbesar dari 15px */
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    border-left: 3px solid #ffc107;
+}
+
+.contact-info-item:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateX(5px);
 }
 
 .contact-icon {
-    width: 50px;
-    height: 50px;
-    background: rgba(255, 193, 7, 0.2);
-    border-radius: 50%;
+    width: 55px; /* Diperbesar dari 45px */
+    height: 55px; /* Diperbesar dari 45px */
+    background: linear-gradient(135deg, #ffc107, #ff9000);
+    border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
+    box-shadow: 0 4px 15px rgba(255, 193, 7, 0.3);
 }
 
 .contact-icon i {
-    color: #ffc107;
-    font-size: 1.5rem;
+    color: white;
+    font-size: 1.5rem; /* Diperbesar dari 1.3rem */
+    font-weight: 600;
 }
 
 .contact-details h6 {
     color: white;
-    font-weight: 600;
-    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 1.1rem; /* Diperbesar dari 1rem */
+    margin-bottom: 8px; /* Diperbesar dari 6px */
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 .contact-details p {
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.9);
     margin: 0;
     line-height: 1.6;
+    font-size: 1rem; /* Diperbesar dari 0.9rem */
 }
 
+/* Form juga diperbesar untuk balance */
 .contact-form-card {
     background: white;
-    border-radius: 20px;
-    padding: 40px;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    padding: 60px 45px; /* Diperbesar untuk seimbang dengan info card */
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    min-height: 100%;
 }
 
-.contact-form-header {
-    margin-bottom: 30px;
+/* Perbaikan Button "Lihat Produk" - Warna Orange */
+.btn-outline {
+    background: transparent;
+    border: 2px solid #ff9000;
+    color: #ff9000;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
 }
 
-.contact-form .form-floating {
-    margin-bottom: 20px;
+.btn-outline:hover {
+    background: #ff9000;
+    color: white;
+    text-decoration: none;
+    border-color: #ff9000;
 }
 
-.contact-form .form-control {
+/* Perbaikan Form Controls - Label Visibility */
+.contact-form .form-control,
+.contact-form .form-select {
     border: 2px solid #e9ecef;
     border-radius: 12px;
+    padding: 16px 20px;
+    font-size: 0.95rem;
+    color: #333 !important;
+    background-color: #fff !important;
     transition: all 0.3s ease;
-    background-color: #f8f9fa;
+    min-height: 58px;
 }
 
-.contact-form .form-control:focus {
+.contact-form .form-control:focus,
+.contact-form .form-select:focus {
     border-color: var(--primary-color);
-    box-shadow: 0 0 0 0.2rem rgba(0, 128, 0, 0.1);
-    background-color: white;
+    box-shadow: 0 0 0 0.25rem rgba(0, 128, 0, 0.1);
+    background-color: #fff !important;
+    color: #333 !important;
 }
 
+/* Perbaikan Label Form - Visibilitas yang Lebih Baik */
 .contact-form .form-floating > label {
-    color: #6c757d;
+    color: #6c757d !important;
     font-weight: 500;
+    padding-left: 20px;
+    font-size: 0.9rem;
+    background: white;
+    opacity: 1 !important;
+    visibility: visible !important;
 }
 
 .contact-form .form-floating > .form-control:focus ~ label,
-.contact-form .form-floating > .form-control:not(:placeholder-shown) ~ label {
-    color: var(--primary-color);
+.contact-form .form-floating > .form-control:not(:placeholder-shown) ~ label,
+.contact-form .form-floating > .form-select ~ label {
+    color: var(--primary-color) !important;
+    font-weight: 600;
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
 }
 
+/* Pastikan label selalu terlihat bahkan saat kosong */
+.contact-form .form-floating > .form-control:not(:focus):placeholder-shown ~ label {
+    color: #6c757d !important;
+    opacity: 0.8 !important;
+    visibility: visible !important;
+    transform: scale(1) translateY(0) translateX(0);
+}
+
+/* Perbaikan placeholder untuk form-control */
+.contact-form .form-control::placeholder {
+    color: transparent !important;
+}
+
+.contact-form .form-select {
+    color: #333 !important;
+}
+
+.contact-form .form-select option {
+    color: #333 !important;
+}
+
+/* Form header styling tetap */
+.contact-form-header {
+    text-align: center;
+    margin-bottom: 35px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #f8f9fa;
+}
+
+.contact-form-header h4 {
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.contact-form-header p {
+    color: #6c757d;
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+/* Button form tetap dengan warna yang benar */
 .contact-form .btn-warning {
     background: linear-gradient(135deg, #ffc107, #ff9000);
     border: none;
-    border-radius: 12px;
+    border-radius: 15px;
     font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
     transition: all 0.3s ease;
-    box-shadow: 0 8px 25px rgba(255, 193, 7, 0.3);
+    box-shadow: 0 4px 15px rgba(255, 193, 7, 0.3);
 }
 
 .contact-form .btn-warning:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 12px 35px rgba(255, 193, 7, 0.4);
     background: linear-gradient(135deg, #ff9000, #e68100);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(255, 193, 7, 0.4);
 }
 
-/* ===== Contact Form Styling (Legacy) ===== */
-.contact-container {
-    max-width: 700px;
-    margin: 0 auto;
-    padding: 40px;
-    background-color: #f9f9f9;
-    color: #333;
-    border-radius: 10px;
-    text-align: center;
+/* Textarea specific styling */
+.contact-form textarea.form-control {
+    resize: vertical;
+    min-height: 150px !important;
+    line-height: 1.6;
 }
-
-.contact-container h1 {
-    color: var(--primary-color);
-}
-
-.contact-container hr {
-    margin: 10px auto 30px;
-    background-color: var(--primary-color);
-}
-
-.contact-container p {
-    margin-bottom: 30px;
-    font-size: 1.1em;
-}
-
-.form-group {
-    margin-bottom: 20px;
-    text-align: left;
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: 600;
-}
-
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1em;
-    font-family: 'Poppins', sans-serif;
-}
-
-.btn-submit {
-    background-color: var(--secondary-color);
-    color: white;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.1em;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.btn-submit:hover {
-    background-color: #e68100;
-}
-
-/* ===== Generic Buttons (for CTA, etc.) ===== */
-.btn {
-    display: inline-block;
-    text-decoration: none;
-    font-weight: 600;
-    border-radius: 6px;
-    padding: 12px 22px;
-    transition: transform .15s ease, box-shadow .25s ease, background-color .25s ease, color .25s ease;
-}
-.btn:active { transform: translateY(1px); }
-
-.btn-primary {
-    background-color: var(--secondary-color);
-    color: #fff;
-    box-shadow: 0 6px 14px rgba(255, 144, 0, .25);
-}
-.btn-primary:hover { background-color: #e68100; }
-.btn-outline {
-    background: transparent;
-    color: #fff;
-    border: 2px solid rgba(255,255,255,.8);
-}
-.btn-outline:hover { background: rgba(255,255,255,.1); }
 
 /* ===== Tombol Back to Top ===== */
 #backToTopBtn {
@@ -1529,5 +1585,184 @@ main>section:nth-of-type(even) .box {
     .box {
         padding: 15px;
         gap: 20px;
+    }
+}
+
+/* Notification Styling */
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+    min-width: 350px;
+    max-width: 500px;
+    padding: 0;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    animation: slideInRight 0.3s ease-out;
+}
+
+.notification-success {
+    background: linear-gradient(135deg, #28a745, #20c997);
+    color: white;
+}
+
+.notification-error {
+    background: linear-gradient(135deg, #dc3545, #fd7e14);
+    color: white;
+}
+
+.notification-content {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 20px;
+}
+
+.notification-content i:first-child {
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
+
+.notification-content span {
+    flex: 1;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.notification-close {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.notification-close:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Tambahan CSS untuk form validation dan loading animation */
+
+/* Loading animation untuk tombol submit */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.spin {
+    animation: spin 1s linear infinite;
+}
+
+/* Form validation styles */
+.is-invalid {
+    border-color: #dc3545 !important;
+    box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.25) !important;
+}
+
+.is-valid {
+    border-color: #198754 !important;
+    box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, 0.25) !important;
+}
+
+/* Button disabled state */
+.btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Enhanced notification positioning */
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+    min-width: 350px;
+    max-width: 500px;
+    padding: 0;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    animation: slideInRight 0.3s ease-out;
+    backdrop-filter: blur(10px);
+}
+
+.notification-success {
+    background: linear-gradient(135deg, #28a745, #20c997);
+    color: white;
+    border-left: 4px solid #fff;
+}
+
+.notification-error {
+    background: linear-gradient(135deg, #dc3545, #fd7e14);
+    color: white;
+    border-left: 4px solid #fff;
+}
+
+.notification-content {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 20px;
+}
+
+.notification-content i:first-child {
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
+
+.notification-content span {
+    flex: 1;
+    font-weight: 500;
+    line-height: 1.4;
+    font-size: 0.95rem;
+}
+
+.notification-close {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+    opacity: 0.8;
+}
+
+.notification-close:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    opacity: 1;
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Mobile responsive untuk notification */
+@media (max-width: 768px) {
+    .notification {
+        top: 10px;
+        right: 10px;
+        left: 10px;
+        min-width: auto;
+        max-width: none;
+    }
+    
+    .notification-content {
+        padding: 14px 16px;
+    }
+    
+    .notification-content span {
+        font-size: 0.9rem;
     }
 }
